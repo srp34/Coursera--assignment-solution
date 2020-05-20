@@ -1,3 +1,14 @@
 h1 {
-	background-color: #fff;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.paragraph {
+	border: 1px solid black;
+	background-color:  #CD5C5C;
+	height: 220px;
+	padding-top: 1em;
+	font-family: Helvetica;
+	color: #D3D3D3;
+	overflow: auto;
 }

@@ -1,14 +1,201 @@
-h1 {
-	margin-bottom: 15px;
-	text-align: center;
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	color: #fff;
+	background-color: #61122f;
+	font-family: 'Oxygen', sans-serif;
 }
 
-.paragraph {
-	border: 1px solid black;
-	background-color:  #CD5C5C;
-	height: 220px;
-	padding-top: 1em;
-	font-family: Helvetica;
-	color: #D3D3D3;
-	overflow: auto;
+/** Header **/
+#header-nav {
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0;
+}
+
+.navbar-brand {
+	padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Name */
+	font-family: 'Lora', serif;
+	color: #557c3e;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .100;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #951C49;
+	text-align: center;
+}
+#nav-list a:hover {
+	background: #E7E7E7;
+}
+#nav-list a span {
+	font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* Menu */
+.menu-title {
+	font-size: 1.8em;
+	text-align: center;
+	margin-bottom: 25px;
+	color: #FDF5E6;
+}
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+}
+.box {
+	margin: 1em;
+	position: relative;
+}
+<! --.menu-item-description {
+  padding-right: 30px;
+  border: 1px solid black;
+  background-color: #008B8B;
+  height: 1000px;
+  padding-top: 1em;
+  
+  padding-left: 30px;
+  font-family: Helvetica;
+  color: #D3D3D3;
+  overflow: auto;
+} -->
+.menu-item-description {
+   padding-right: 30px;
+  border: 1px solid black;
+  height: 1000px;
+  padding-top: 1em;
+  font-family: Helvetica;
+  color: #D3D3D3;
+  overflow: auto;
+  background-color: #008B8B;
+}
+h3.menu-item-title {
+  text-align: center;	
+  margin: 0 0 10px;
+  position: relative;
+  color: #E9967A;
+}
+.menu-item-details {
+  font-size: 1em;
+  font-style: italic;
+  color: #FFD700;
+}
+/* END MENU */
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .navbar-brand {
+    padding-top: 20px;
+    height: 80px;
+    margin: 5px 5px 5px 0;
+  }
+  .navbar-brand h1 { /* Name */
+    padding-top: 10px;
+    font-size: 4vw; /* 1vw = 1% of viewport width */
+    margin: 5px 5px 5px 0;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.navbar-brand {
+    padding-top: 20px;
+    height: 80px;
+    margin: 5px 5px 5px 0;
+  }
+  .navbar-brand h1 { /* Name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+    margin: 5px 5px 5px 0;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar-brand {
+	    padding-top: 20px;
+	    height: 80px;
+	    margin: 5px 5px 5px 0;
+	  }
+  	.navbar-brand h1 { /* Name */
+	    padding-top: 10px;
+	    font-size: 6vw; /* 1vw = 1% of viewport width */
+	    margin: 5px 5px 5px 0;
+	  }
+
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+    margin: 5px 5px 5px 0;
+  }
+  .navbar-brand h1 { /* Name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+    margin: 5px 5px 5px 0;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+   .container {
+    margin-top: 0px;
+    padding: 10;
+  }
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
 }
